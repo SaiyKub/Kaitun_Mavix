@@ -3751,6 +3751,7 @@ spawn(function()
 		end)
 	end)
 StopTween(_G.Auto_Dungeon)
+
 local env = (getgenv or getrenv or getfenv)()
 local rs = game:GetService("ReplicatedStorage")
 local players = game:GetService("Players")
@@ -3824,7 +3825,7 @@ Module.FastAttack = (function()
         end
 
         if not self.FirstAttack then
-            task.wait(0.05)  -- ลดเวลาระหว่างการโจมตีให้เร็วที่สุด
+            task.wait(0.01)  -- ลดเวลาระหว่างการโจมตีให้เร็วที่สุด
         end
     end
 
